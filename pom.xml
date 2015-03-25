@@ -14,7 +14,10 @@
     <sourceDirectory>src/main/java</sourceDirectory>
     <testSourceDirectory>src/main/java</testSourceDirectory>
     <plugins>
-      
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.*</version>
+      </plugin>
     </plugins>
   </build>
 
@@ -22,7 +25,7 @@
     <dependency>
       <groupId>io.ddavison</groupId>
       <artifactId>conductor</artifactId>
-      <version>1.1</version>
+      <version>[1,)</version>
     </dependency>
 
     <dependency>
